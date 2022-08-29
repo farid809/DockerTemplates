@@ -67,9 +67,9 @@ app.get('/people', async (req, res) => {
   }
 });
 
-app.listen(3000);
+
 mongoose.connect(
-  'mongodb://host.docker.internal:27017/swfavorites',
+  'mongodb://mongodb-net:27017/swfavorites',
   { useNewUrlParser: true },
   (err) => {
     if (err) {
